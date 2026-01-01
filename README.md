@@ -1,46 +1,37 @@
-# ai-compose-ui-generator
-This repo shows how AI can convert plain English UI requirements into production-ready Jetpack Compose screens.
+# AI-Driven UI Automation for Android (Jetpack Compose)
 
-# Firebender – AI UI Automation for Android
+This project demonstrates how AI can automate Android UI development using
+natural language and Jetpack Compose.
 
-This folder contains all AI prompt configurations used to automatically generate
-Jetpack Compose UI screens from natural language descriptions.
+## 🚀 What This Demo Shows
+- AI-generated Jetpack Compose screens
+- Automatic ViewModel and UiState creation
+- MVVM architecture enforcement
+- Accessibility and dark mode by default
+- Reduction of UI boilerplate code
 
-## 📌 Purpose
-The goal is to demonstrate how AI (via Firebender) can:
-- Convert plain English screen descriptions into Jetpack Compose UI
-- Automatically generate ViewModel and UiState
-- Follow MVVM architecture
-- Ensure accessibility and dark mode support
+## 🧠 Powered By
+- Kotlin
+- Jetpack Compose
+- Material 3
+- Firebender (AI prompt automation)
 
-## 📂 Folder Structure
+## 📂 Important Folder
+- `firebender/` → Contains all AI prompt logic and examples
 
-firebender/
-├── system_prompt.md              # Defines AI behavior and coding rules
-├── ui_generator_prompt.md        # Generic UI → Compose generation prompt
-├── examples/                     # Sample screen descriptions
-│   ├── login_screen.md
-│   ├── payment_screen.md
-│   └── profile_screen.md
+## 🧪 Example
+Write this:
+> "Create a login screen with email, password, loading and error states"
 
-## 🧠 How It Works
+Get this:
+- LoginScreen.kt
+- LoginViewModel.kt
+- LoginUiState.kt
 
-1. `system_prompt.md` defines **who the AI is**
-2. `ui_generator_prompt.md` defines **what the AI should generate**
-3. Any file inside `examples/` provides **screen-specific requirements**
-4. Firebender combines all inputs and generates Kotlin files automatically
+## 🎯 Use Cases
+- Rapid prototyping
+- UI boilerplate elimination
+- Architecture-safe UI generation
+- AI-assisted Android development demos
 
-## ✅ Output Generated
-
-For each screen description, Firebender generates:
-- `<ScreenName>Screen.kt`
-- `<ScreenName>ViewModel.kt`
-- `<ScreenName>UiState.kt`
-
-## 🚀 Usage
-
-To generate a new screen:
-1. Add a new `.md` file inside `examples/`
-2. Describe the screen in plain English
-3. Run Firebender
-4. Review generated Compose code
+This project is designed for learning, demos, and showcasing AI-driven development.
